@@ -47,16 +47,27 @@ function clickEnter() {
 
   switch (operator) {
     case "+":
-      console.log(inputNumber, operator, result);
+      result = +inputNumber + +result;
+      inputResult(result + "");
+      inputNumber = "";
       break;
+
     case "-":
-      console.log(inputNumber, operator, result);
+      result = +inputNumber - +result;
+      inputResult(result + "");
+      inputNumber = "";
       break;
+
     case "*":
-      console.log(inputNumber, operator, result);
+      result = +inputNumber * +result;
+      inputResult(result + "");
+      inputNumber = "";
       break;
+
     case "/":
-      console.log(inputNumber, operator, result);
+      result = parseInt(+inputNumber / +result, 10);
+      inputResult(result + "");
+      inputNumber = "";
       break;
   }
 }

@@ -67,7 +67,7 @@ function clickEnter() {
     case "/":
       result = parseInt(+inputNumber / +result, 10);
       inputResult(result + "");
-      inputNumber = "";
+      inputNumber = "";      break;
       break;
   }
 }
